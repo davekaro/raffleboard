@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Raffleboard</title>
+    <link href='stylesheets/reset.css' rel='stylesheet' type='text/css' />
+    <link href='stylesheets/application.css' rel='stylesheet' type='text/css' />
+    <script language='javascript' src='javascripts/jquery.js' type='text/javascript'></script>
+    <script language='javascript' src='javascripts/rand.js' type='text/javascript'></script>
+    <script language='javascript' src='javascripts/solari.js' type='text/javascript'></script>
+    <script language='javascript' src='javascripts/application.js' type='text/javascript'></script>
+  </head>
+  <body>
+    <div id='header'>
+      <a href='#' id='add_entries_link'>add entries</a>
+      <a href='#' id='prizes_link' style="display: none;">sponsors</a>
+      <a class='pick' href='#' id='pick_1'>Pick 1</a>
+      <a class='pick' href='#' id='pick_5'>Pick 5</a>
+      <form id='entries_form'>
+        <input id='new_entries' type='text' value='numbers, ranges...' />
+        <input type='submit' value='Add These' />
+      </form>
+      <select style="display: none;" id='prize_selection'><option value="Addison_Wesley.gif">Addison Wesley</option><option value="Amazon.png">Amazon</option><option value="Cardinal_Solutions.png">Cardinal Solutions</option><option value="Codemash.gif">Codemash</option><option value="ComponentOne.png">ComponentOne</option><option value="Compuware.png">Compuware</option><option value="Devexpress.png">Devexpress</option><option value="HMB.png">HMB</option><option value="ICC.png">ICC</option><option value="Inedo.png">Inedo</option><option value="Inner_Circle_Media.jpg">Inner Circle Media</option><option value="Microsoft.png">Microsoft</option><option value="Perficient.png">Perficient</option><option value="Pillar.jpg">Pillar</option><option value="Pivotal_Tracker.png">Pivotal Tracker</option><option value="PreEmptive_Solutions.png">PreEmptive Solutions</option><option value="Quick_Solutions.png">Quick Solutions</option><option value="Rally_Software.png">Rally Software</option><option value="Redgate.png">Redgate</option><option value="SOPHIC.png">SOPHIC</option><option value="SRT_solutions.png">SRT solutions</option><option value="Sogeti.png">Sogeti</option><option value="Stout_Systems.png">Stout Systems</option><option value="TechSmith.png">TechSmith</option><option value="Tech_Tattoos.jpg">Tech Tattoos</option><option value="Telerick.png">Telerick</option><option value="nplus1.png">nplus1</option></select>
+    </div>
+    <div id='wrapper'>
+      <div id='prizes'>
+        <img id='sponsor' src='images/sponsors/Gang_Banner.png' />
+      </div>
+      <div id='winners'>
+        <h1>WINNERS (<span id="entry_counter">0</span> entries left)</h1>
+        <ul></ul>
+      </div>
+      <div id='drawing'>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <ul id='credits'>
+        <li>
+          written by
+          <a href='http://twitter.com/adamlogic'>@adamlogic</a>
+        </li>
+        <li>
+          designed by
+          <a href='http://twitter.com/nummi'>@nummi</a>
+        </li>
+        <li>
+          inspired by
+          <a href='http://twitter.com/webpoobah'>@webpoobah</a>
+        </li>
+		<li>
+          forked by
+          <a href='http://twitter.com/davekaro'>@davekaro</a>
+        </li>
+        <li>
+          fork me on
+          <a href='http://github.com/adamlogic/raffleboard'>github</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
